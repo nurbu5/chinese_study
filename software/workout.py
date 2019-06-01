@@ -1,7 +1,7 @@
 import os
 import time
 
-PRONUNCIATIONS_DIRECTORY = "../pronunciations/"
+PRONUNCIATIONS_DIRECTORY = "../data/pronunciations/"
 
 exercises={
     "Gymnastic Ring":"体操环",
