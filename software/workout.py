@@ -6,15 +6,15 @@ OS_PLAY_COMMAND = "afplay "
 
 exercises={
     "Gymnastic Ring":"体操环",
-    "Jumping Jacks":"开合跳",
+    #"Jumping Jacks":"开合跳",
     "Wall Sits":"贴墙半蹲",
     "Push-ups":"伏地挺身",
     "Sit-ups":"仰卧起坐",
-    "Weight Bearing Stool (Step-ups)":"负重登凳",
+    #"Weight Bearing Stool (Step-ups)":"负重登凳",
     "Squats":"深蹲",
     "Double arm flexion (Tricep Dips)":"双杠臂屈伸",
     "Plank":"平板支撑",
-    "High Knees":"高抬腿运动",
+    #"High Knees":"高抬腿运动",
     "Handstand":"手倒立",
     "Hollow Hold":"空心的",
     "Lunges":"弓步",
