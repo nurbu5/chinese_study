@@ -2,6 +2,7 @@ import os
 import time
 
 PRONUNCIATIONS_DIRECTORY = "../data/pronunciations/"
+OS_PLAY_COMMAND = "afplay "
 
 exercises={
     "Gymnastic Ring":"体操环",
@@ -25,34 +26,34 @@ lr_exercises={
     "Side Bridge":"侧桥"
 }
 
-os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "多少.mp3")
+os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "多少.mp3")
 circuits = input("多少 ")
 
 for _ in range(int(circuits)):
     for en, zh in exercises.items():
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "下一个练习.mp3")
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + zh + ".mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "下一个练习.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + zh + ".mp3")
         print("中文:", zh)
         print("English:", en)
         print("\n")
         time.sleep(9)
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "倒数.mp3") #countdown.mp3
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "开始.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "倒数.mp3") #countdown.mp3
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "开始.mp3")
         time.sleep(30)
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "停止.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "停止.mp3")
 
     for en, zh in lr_exercises.items():
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "下一个练习.mp3")
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + zh + ".mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "下一个练习.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + zh + ".mp3")
         print("中文:", zh)
         print("English: ", en)
         print("\n")
         time.sleep(9)
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "倒数.mp3") #countdown.mp3
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "开始.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "倒数.mp3") #countdown.mp3
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "开始.mp3")
         time.sleep(20)
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "替换.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "替换.mp3")
         time.sleep(21)
-        os.system("mpg123 -q " + PRONUNCIATIONS_DIRECTORY + "停止.mp3")
+        os.system(OS_PLAY_COMMAND + PRONUNCIATIONS_DIRECTORY + "停止.mp3")
 
 
