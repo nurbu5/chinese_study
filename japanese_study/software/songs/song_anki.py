@@ -4,6 +4,16 @@ DECK_ID = 1371224683
 DECK_NAME = "Songs and Poems"
 JAPANESE_ENGLISH_SEPARATOR = "\n==========\n"
 
+style = """
+.card {
+    font-family: arial;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+"""
+
 note_model = genanki.Model(1700099766,
                            'Song or Poem',
                            fields=[{'name': 'Order'},
@@ -19,7 +29,8 @@ note_model = genanki.Model(1700099766,
                                        'afmt': open('en_back.html', 'r').read()},
                                       {'name': 'Japanese Lyrics',
                                        'qfmt': open('jp_front.html', 'r').read(),
-                                       'afmt': open('jp_back.html', 'r').read()}])
+                                       'afmt': open('jp_back.html', 'r').read()}],
+                           css=style)
 
 def main():
     filename = input("File Name: ")
